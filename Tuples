@@ -22,22 +22,13 @@ Print the result of .
 
 ## Solution: 
 
-# Line 1
-n = raw_input()
-
-# Line 2
-input_line = raw_input()
+n = int(input())
 
 # Splitting the string by whitespace into a list.
-input_list = input_line.split()
-
-# Converting the list elements from strings to ints
-input_list = map(int, input_list)
-
-#map() executes a specified function for each item in an iterable.
+list = [int(x) for x in input().split()]
 
 # Convert the list of ints into a tuple of ints
-t = tuple(input_list)
+t = tuple(list)
 
 # line 3
 print(hash(t))
