@@ -1,0 +1,43 @@
+Given an integer, , and  space-separated integers as input, create a tuple, , of those  integers. Then compute and print the result of .
+
+Note: hash() is one of the functions in the __builtins__ module, so it need not be imported.
+
+## Input Format
+
+The first line contains an integer, , denoting the number of elements in the tuple.
+The second line contains  space-separated integers describing the elements in tuple .
+
+## Output Format
+
+Print the result of .
+
+## Sample Input 0
+
+2
+1 2
+
+## Sample Output 0
+
+3713081631934410656
+
+## Solution: 
+
+# Line 1
+n = raw_input()
+
+# Line 2
+input_line = raw_input()
+
+# Splitting the string by whitespace into a list.
+input_list = input_line.split()
+
+# Converting the list elements from strings to ints
+input_list = map(int, input_list)
+
+#map() executes a specified function for each item in an iterable.
+
+# Convert the list of ints into a tuple of ints
+t = tuple(input_list)
+
+# line 3
+print(hash(t))
