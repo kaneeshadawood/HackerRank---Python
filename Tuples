@@ -24,11 +24,11 @@ Print the result of .
 
 n = int(input())
 
-# Splitting the string by whitespace into a list.
+# Splitting the the string by whitespace into a list.
 list = [int(x) for x in input().split()]
 
 # Convert the list of ints into a tuple of ints
 t = tuple(list)
 
-# line 3
+# print the result
 print(hash(t))
