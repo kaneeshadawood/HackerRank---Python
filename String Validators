@@ -67,6 +67,18 @@ True
 
 SOLUTION:
 
+# Task: Given an input string 'S' find out if the String contains:
+# alphanumeric characters
+# alphabetical characters
+# digits
+# lowercase characters
+# uppercase characters
+
+# Input format
+# a single line containg a string S
+
+# Constraints: 0 < len(S) : 1000
+
 Using python's any() function: any() returns True if any item in an iterable are true, otherwise it returns False.
 
 S = input()
